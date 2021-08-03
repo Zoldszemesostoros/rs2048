@@ -5,17 +5,15 @@ A TUI 2048-game, written in Rust.
 ## Features
  - Basic features: collapsing contacting and same tiles on swipe, and putting a new tile to the board.
  - Randomly choose between 2 and 4 when adding new tiles.
- - If the table hasn't changed after swipe, no new tiles appearing.
- - Tiles coming from collapsing collapse further only after the next swipe. (E.g. 2 2 2 2 collapse to 4 4, and only after a second swipe collapse to 8.)
+ - If the table hasn't changed after a swipe, no new tiles will appear.
+ - Tiles coming from collapsing collapse further only after the next swipe. (E.g. 2 2 2 2 collapses to 4 4, and only after a second swipe collapses to 8.)
  - Game Over detection
 
 ## Compatibility
-As it has only cross-platform (and statically linked) depencies (ncurses and rand), it should work on almost every OS.
-However, creating Windows builds is tedious, so I'll provide only Linux builds (I'll may reconsider).
-If you don't have Linux installed - and don't want to install it - you can use [onworks.net](https://www.onworks.net), that provides a virtualized Linux system that you can control from your browser.
+Should build/work everywhere, Linux is tested.
 
 ## Running
-It don't have any runtime dependencies, so you can download the [binary]() from the Releases page, open a terminal where you've put the binary, and start it with `./rs2048`.
+As it doesn'have any runtime dependencies, so you can download the binary from the Releases page, open a terminal where you've put the binary, and start it with `./rs2048`.
 
 ## Building from source
 First, clone the repo via git (if you don't have git, and don't want to install it, you can download the source code from GitHub directly):<br>
